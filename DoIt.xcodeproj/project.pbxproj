@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0D83757F1D6E2D05005037E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D83757E1D6E2D05005037E4 /* AppDelegate.swift */; };
-		0D8375811D6E2D05005037E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8375801D6E2D05005037E4 /* ViewController.swift */; };
+		0D8375811D6E2D05005037E4 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8375801D6E2D05005037E4 /* TasksViewController.swift */; };
 		0D8375841D6E2D05005037E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8375821D6E2D05005037E4 /* Main.storyboard */; };
 		0D8375871D6E2D05005037E4 /* DoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D8375851D6E2D05005037E4 /* DoIt.xcdatamodeld */; };
 		0D8375891D6E2D05005037E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8375881D6E2D05005037E4 /* Assets.xcassets */; };
 		0D83758C1D6E2D05005037E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D83758A1D6E2D05005037E4 /* LaunchScreen.storyboard */; };
+		0D8375941D6E4365005037E4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8375931D6E4365005037E4 /* Task.swift */; };
+		0D8375961D6E495B005037E4 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8375951D6E495B005037E4 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D83757B1D6E2D05005037E4 /* DoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D83757E1D6E2D05005037E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D8375801D6E2D05005037E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D8375801D6E2D05005037E4 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		0D8375831D6E2D05005037E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D8375861D6E2D05005037E4 /* DoIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoIt.xcdatamodel; sourceTree = "<group>"; };
 		0D8375881D6E2D05005037E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D83758B1D6E2D05005037E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D83758D1D6E2D05005037E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8375931D6E4365005037E4 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0D8375951D6E495B005037E4 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				0D83757E1D6E2D05005037E4 /* AppDelegate.swift */,
-				0D8375801D6E2D05005037E4 /* ViewController.swift */,
+				0D8375801D6E2D05005037E4 /* TasksViewController.swift */,
 				0D8375821D6E2D05005037E4 /* Main.storyboard */,
 				0D8375881D6E2D05005037E4 /* Assets.xcassets */,
 				0D83758A1D6E2D05005037E4 /* LaunchScreen.storyboard */,
 				0D83758D1D6E2D05005037E4 /* Info.plist */,
 				0D8375851D6E2D05005037E4 /* DoIt.xcdatamodeld */,
+				0D8375931D6E4365005037E4 /* Task.swift */,
+				0D8375951D6E495B005037E4 /* AddTaskViewController.swift */,
 			);
 			path = DoIt;
 			sourceTree = "<group>";
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8375941D6E4365005037E4 /* Task.swift in Sources */,
 				0D8375871D6E2D05005037E4 /* DoIt.xcdatamodeld in Sources */,
-				0D8375811D6E2D05005037E4 /* ViewController.swift in Sources */,
+				0D8375811D6E2D05005037E4 /* TasksViewController.swift in Sources */,
 				0D83757F1D6E2D05005037E4 /* AppDelegate.swift in Sources */,
+				0D8375961D6E495B005037E4 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
