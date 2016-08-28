@@ -42,6 +42,7 @@
                     <connections>
                         <outlet property="tableView" destination="iQo-uK-meu" id="C1n-8n-Z4n"/>
                         <segue destination="mRF-EO-xh5" kind="show" identifier="addSegue" id="TyY-Y6-aV7"/>
+                        <segue destination="J0n-Fl-0Rk" kind="show" identifier="selectTaskSegue" id="yCA-uZ-11z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,7 +76,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TC9-Bi-PRB"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TC9-Bi-PRB"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGW-wf-a9G">
                                 <state key="normal" title="Add Task"/>
                                 <connections>
@@ -107,6 +108,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oac-yM-WF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888.8" y="147.97601199400302"/>
+        </scene>
+        <!--Complete Task View Controller-->
+        <scene sceneID="zm2-FH-BvJ">
+            <objects>
+                <viewController id="J0n-Fl-0Rk" customClass="CompleteTaskViewController" customModule="DoIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yXn-XC-pAB"/>
+                        <viewControllerLayoutGuide type="bottom" id="sWc-5z-kOz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cko-vL-Bb2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHx-5j-GVh">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZO-qf-hbM">
+                                <state key="normal" title="Complete"/>
+                                <connections>
+                                    <action selector="completeBtn:" destination="J0n-Fl-0Rk" eventType="touchUpInside" id="OEa-Wh-VY8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MHx-5j-GVh" firstAttribute="centerX" secondItem="Cko-vL-Bb2" secondAttribute="centerX" id="EZ7-KE-OUr"/>
+                            <constraint firstItem="EZO-qf-hbM" firstAttribute="top" secondItem="MHx-5j-GVh" secondAttribute="bottom" constant="38" id="Vav-zD-b62"/>
+                            <constraint firstItem="MHx-5j-GVh" firstAttribute="top" secondItem="yXn-XC-pAB" secondAttribute="bottom" constant="30" id="fco-Qd-Ast"/>
+                            <constraint firstItem="EZO-qf-hbM" firstAttribute="centerX" secondItem="Cko-vL-Bb2" secondAttribute="centerX" id="yGS-AR-MiI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="taskLbl" destination="MHx-5j-GVh" id="RZS-Rh-B2z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dst-oe-VRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="893"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xMD-OQ-tvt">

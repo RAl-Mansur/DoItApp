@@ -22,6 +22,7 @@ class AddTaskViewController: UIViewController {
     @IBAction func addTask(_ sender: AnyObject) {
         // Create a task from outlet information
         let task = Task()
+        
         task.taskName = taskName.text!
         task.important = importantSwitch.isOn
         
